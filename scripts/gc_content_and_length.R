@@ -1,13 +1,26 @@
+# gc_content_and_length.R
+
 # Packages
 library(rtracklayer)
 library(Rsamtools)
 library(data.table)
 
 
-
-#' Gets transcript length and GC content from all transcripts of GTF file
-#' @return
-#' data.table object with transcript_id, gene_id, number of GC bases in each isoform and isoform length
+#' Get Transcript Length and GC Content from GTF File
+#'
+#' This function extracts transcript length and GC content information from a GTF file.
+#'
+#' @param g A path to the genome FASTA file.
+#' @param a A path to a GFF/GTF file containing transcript coordinates.
+#' @param a_format The format of the annotation file (default is "gtf").
+#'
+#' @return A data.table object with the following columns:
+#'   - transcript_id: Transcript identifier
+#'   - gene_id: Gene identifier
+#'   - nGC: Number of GC bases in each isoform
+#'   - length: Total length of the isoform (including exons and UTRs)
+#'
+#' @export
 gc_length <- function(g, a, a_format = "gtf"){
   # Read genome and annotation
   genome <- Rsamtools::FaFile(g)
