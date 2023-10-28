@@ -28,7 +28,7 @@ awk 'NR%4 == 2 {lengths[length($0)]++} END {for (l in lengths) {print l, lengths
 
 ### Average Read Length
 
-Compute average read length from FASTQ or FASTA file. Python script [here](scripts/average_read_length.py).
+Compute average read length from FASTQ or FASTA file. Python script [here](average_read_length.py).
 
 Use:
 
@@ -89,7 +89,7 @@ cat <file.gtf> | awk '$3 == "transcript" { gsub(/"/, "", $12); gsub(/;/, "", $12
 
 To use the `trans_to_chrom` R function to get transcript IDs and corresponding chromosomes, follow these steps:
 
-1. Download the R script [trans_to_chrom.R](scripts/trans_to_chrom.R) from this repository.
+1. Download the R script [trans_to_chrom.R](trans_to_chrom.R) from this repository.
 
 2. Load the script in your R environment:
 
@@ -106,7 +106,7 @@ Make sure you have the required R packages installed before using the function.
 
 Get transcript length and GC content of transcripts from GTF file.
 
-1. Download the R script [gc_content_and_length.R](scripts/gc_content_and_length.R) from this repository.
+1. Download the R script [gc_content_and_length.R](gc_content_and_length.R) from this repository.
 
 2. Load the script in your R environment:
 

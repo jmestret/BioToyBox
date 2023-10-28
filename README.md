@@ -2,7 +2,7 @@
 
 Don't let those small scripts or code snippets get lost. They might come in handy for you in the future.
 
- <img align='right' src='https://media.giphy.com/media/zOvBKUUEERdNm/giphy.gif' height='250"'>
+ <img align='right' src='https://media.giphy.com/media/zOvBKUUEERdNm/giphy.gif' height='100"'>
 
 Welcome to BioToyBox, a collaborative repository of small scripts and commands for simple bioinformatics data processing tasks. We invite you to explore and contribute to this collection.
 
